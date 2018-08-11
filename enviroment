@@ -1,6 +1,7 @@
-#!/bin/sh
+#!/bin/bash
 #env-----------
-ACCOUNT='アカウント名'
-SERVER_NAME='使用しているサーバ'
-API_KEY='APIキー'
 IP_ADDR=`echo $(curl -Ss inet-ip.info)`
+FILE_NAME=${0##*/}
+
+#account--------
+. ./account_env
