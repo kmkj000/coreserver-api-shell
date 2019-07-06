@@ -1,4 +1,5 @@
 #!/bin/bash
+cd $(dirname $0)
 . ./enviroment
 curl https://api.coreserver.jp/v1/ftp/info -X POST \
   -d "account=${ACCOUNT}" \

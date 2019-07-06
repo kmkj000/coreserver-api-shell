@@ -1,4 +1,5 @@
 #!/bin/bash
+cd $(dirname $0)
 . ./enviroment
 curl https://api.coreserver.jp/v1/tool/ssh_ip_allow -X POST \
   -d "api_secret_key=${API_SECRET_KEY}" \
