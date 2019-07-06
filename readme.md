@@ -1,8 +1,8 @@
 ## Description
-CORESERVERを使っているとFTPだったりSSHだったりで30日過ぎたら拒否されるから定期的に実行する用
+CORESERVERを使っているとFTPだったりSSHだったりで30日過ぎたら拒否されるからcronなどに入れて定期的に実行する用
 
 ## Usage 
-1. account_envを作成
+1. `account_secret` という名前のファイルを作成
 ```bash
 #!/bin/bash
 # account info ----------------------------
@@ -13,5 +13,5 @@ API_KEY='取得したAPIキー'
 
 2. RUN
 ```bash
-./coreserver_allow
+./coreserver_ssh_ip_allow
 ```
